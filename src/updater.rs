@@ -50,10 +50,18 @@ pub fn check_for_updates(current_version: &str) -> Option<UpdateInfo> {
     None
 }
 
-pub fn perform_update(info: UpdateInfo) -> Result<()> {
+pub fn perform_update(_info: UpdateInfo) -> Result<()> {
     println!("{}", style(":: starting automatic update...").bold().cyan());
 
-    Command::new("nix").arg("profile").arg("install").arg("github:NacreousDawn596/nixboost")
+    let status = Command::new("nix")
+        .arg("profile")
+        .arg("install")
+        .arg("github:NacreousDawn596/nixboost")
+        .status()?;
+
+    if !status.success() {
+        anyhow::bail!("nix profile install failed");
+    }
 
     println!("{}", style(":: update completed successfully.").green().bold());
     Ok(())
