@@ -1,6 +1,6 @@
 # nixboost 🚀
 
-**nixboost** is a high-performance, enterprise-grade frontend for managing packages on **NixOS**.
+**nixboost** is a fast, improved frontend for managing packages on **NixOS**.
 It makes searching and installing packages from **nixpkgs** and **NUR** feel instant, predictable, and actually enjoyable.
 
 Think *pacman UX*, but for NixOS — without breaking purity :3

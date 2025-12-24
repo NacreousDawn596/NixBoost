@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.0] - 2025-12-24 - Enterprise-Grade Transformation
+## [2.0.0] - 2025-12-24 - Major Improvement
 
 ### Stats
 - **Lines of Code**: 548 -> **5,494** (10x increase)
@@ -10,7 +10,7 @@
 
 ### Complete Architecture Overhaul
 
-Transformed NixBoost from a simple CLI utility into a modular, enterprise-grade package manager with domain-driven design:
+Transformed NixBoost from a simple CLI utility into an improved, modular package manager with domain-driven design:
 
 ```
 src/
