@@ -1,5 +1,5 @@
 {
-  description = "nixboost – Rust-powered CLI tool";
+  description = "nixboost - Rust-powered CLI tool";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -14,7 +14,7 @@
       {
         packages.default = pkgs.rustPlatform.buildRustPackage {
           pname = "nixboost";
-          version = "1.0.0";
+          version = "1.0.3";
 
           src = ./.;
 
